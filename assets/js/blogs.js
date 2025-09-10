@@ -5,8 +5,12 @@ async function loadBlogs() {
     const res = await fetch('assets/data/blogs.json', { cache: 'no-cache' });
     const items = res.ok ? await res.json() : [];
     const sorted = sortByDateDesc(items);
-    const html = sorted.map(toCard).join('');
-    container.innerHTML = html;
+    if (!sorted.length) {
+      container.innerHTML = '<p class="muted">No posts yet.</p>';
+    } else {
+      const html = sorted.map(toCard).join('');
+      container.innerHTML = html;
+    }
     setupFiltering();
   } catch (e) {
     container.innerHTML = '<p class="muted">Failed to load posts.</p>';
