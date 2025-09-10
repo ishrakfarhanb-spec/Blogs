@@ -32,6 +32,9 @@
 .nav-toggle { display: none; }
 .site-footer { border-top: 1px solid var(--border); margin-top: 40px; background: #fff; }
 .footer-grid, .footer-bottom { max-width: var(--wrap); margin: 0 auto; padding: 20px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.footer-grid { align-items: center; }
+/* Vertically center the brand block specifically */
+.footer-grid > div:first-child { display: flex; flex-direction: column; justify-content: center; }
 .footer-bottom { display: none; }
 .
 .footer-note { margin: 0; color: #9ca3af; font-size: 12px; line-height: 1.2; }
