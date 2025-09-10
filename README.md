@@ -1,4 +1,4 @@
-# Blogs (Tools & Craft style)
+# Blogs
 
 A standalone blog website with a sticky sidebar and a two‑column feed.
 
