@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Post</title>
+    <meta name="description" content="Blog post" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <style>
+      .post-wrap { max-width: var(--wrap); margin: 24px auto; padding: 0 0 48px; }
+      .post-hero { margin: 12px 0 18px; }
+      .post-hero img { width: 100%; height: auto; border-radius: var(--radius); display:block; }
+      .post-meta { color: var(--muted); font-size: 14px; margin: 4px 0 18px; }
+      .post-body p { margin: 0 0 14px; }
+    </style>
+  </head>
+  <body>
+    <div data-include="ishrak_site/header"></div>
+    <main class="post-wrap">
+      <a class="btn" href="./">← Back to Blogs</a>
+      <h1 id="post-title"></h1>
+      <div class="post-meta" id="post-meta"></div>
+      <div class="post-hero" id="post-hero"></div>
+      <article class="post-body" id="post-body"></article>
+    </main>
+    <div data-include="ishrak_site/footer"></div>
+    <script src="assets/js/includes.js" defer></script>
+    <script src="assets/js/post.js" defer></script>
+  </body>
+  </html>
+

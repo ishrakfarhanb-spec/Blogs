@@ -36,6 +36,7 @@ function toCard(item) {
       <h2 class="title">${escapeHtml(item.title)}</h2>
       <p class="desc">${escapeHtml(item.excerpt || '')}</p>
       <div class="byline"><span class="avatar" aria-hidden="true"></span><span>${escapeHtml(item.author || '')}</span></div>
+      ${item.slug ? `<a class="btn btn-link" href="post.html?slug=${encodeURIComponent(item.slug)}">Read more →</a>` : ''}
     </div>
   </article>`;
 }
