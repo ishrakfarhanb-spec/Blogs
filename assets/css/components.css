@@ -34,7 +34,7 @@
 .footer-grid, .footer-bottom { max-width: var(--wrap); margin: 0 auto; padding: 20px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .footer-bottom { display: none; }
 .
-.footer-note { margin-top: 6px; color: var(--muted); font-size: 12px; }
+.footer-note { margin: 2px 0; color: var(--muted); font-size: 12px; line-height: 1.3; }
 ul.plain { list-style: none; margin: 0; padding: 0; }
 .footer-brand { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
 /* Footer links: dark text, vertical follow list */
