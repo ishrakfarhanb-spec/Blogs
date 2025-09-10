@@ -53,3 +53,12 @@ ul.plain { list-style: none; margin: 0; padding: 0; }
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   cursor: pointer;
 }
+
+/* Dark theme component overrides */
+:root[data-theme="dark"] .card {
+  background: #0f172a;
+  border-color: var(--border);
+}
+:root[data-theme="dark"] .btn { background: #111827; color: #fff; border-color: #374151; }
+:root[data-theme="dark"] .site-header { background: rgba(17,24,39,.85); border-bottom-color: var(--border); }
+:root[data-theme="dark"] .site-footer { background: #0b0f14; border-top-color: var(--border); }
