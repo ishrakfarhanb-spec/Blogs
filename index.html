@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tools & Craft — Blogs</title>
+    <meta name="description" content="A magazine-style blog hub with a sticky sidebar and two-column feed." />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages/blogs.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div data-include="header"></div>
+
+    <main id="main" class="shell">
+      <aside class="sidebar" aria-labelledby="sidebar-title">
+        <div class="sticky">
+          <h1 id="sidebar-title">Tools <span class="amp">&</span> Craft</h1>
+          <p class="sub">Thoughts on the future of work, from people and teams creating it.</p>
+          <hr />
+          <h3>Latest</h3>
+          <div class="filters" role="tablist" aria-label="Categories">
+            <button class="active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button data-filter="hq" role="tab" aria-selected="false">Notion HQ</button>
+            <button data-filter="teams" role="tab" aria-selected="false">For Teams</button>
+            <button data-filter="tech" role="tab" aria-selected="false">Tech</button>
+            <button data-filter="inspiration" role="tab" aria-selected="false">Inspiration</button>
+            <button data-filter="pioneers" role="tab" aria-selected="false">Pioneers</button>
+            <button data-filter="first-block" role="tab" aria-selected="false">First Block</button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="feed" id="feed" aria-live="polite"></section>
+    </main>
+
+    <div data-include="footer"></div>
+
+    <script src="assets/js/includes.js" defer></script>
+    <script src="assets/js/blogs.js" defer></script>
+  </body>
+</html>
+

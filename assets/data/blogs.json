@@ -1,0 +1,57 @@
+[
+  {
+    "title": "AI is the new plastic",
+    "excerpt": "From kitchens to cars, AI is quietly infusing everyday tools — reshaping craft and workflows in the process.",
+    "author": "Linus Lee · Editor at Large",
+    "category": "Notion HQ",
+    "tags": ["hq", "inspiration"],
+    "image": "assets/img/placeholder-wide.svg",
+    "imageAlt": "Vintage tech assortment"
+  },
+  {
+    "title": "How AI reshapes knowledge management",
+    "excerpt": "What changes when every teammate has an assistant that never sleeps?",
+    "author": "F. Khosrowshahi · CTO",
+    "category": "For Teams",
+    "tags": ["teams", "hq"],
+    "image": "assets/img/placeholder-wide.svg",
+    "imageAlt": "Teammates collaborating"
+  },
+  {
+    "title": "Why small tools compound",
+    "excerpt": "Tiny scripts, outsized leverage: the quiet economics of developer ergonomics.",
+    "author": "Casey · Staff Engineer",
+    "category": "Tech",
+    "tags": ["tech"],
+    "image": "assets/img/placeholder-wide.svg",
+    "imageAlt": "Circuit board macro"
+  },
+  {
+    "title": "A system for focused notes",
+    "excerpt": "How a lightweight structure turns scattered ideas into drafts you can ship.",
+    "author": "Amal · Writer",
+    "category": "Inspiration",
+    "tags": ["inspiration"],
+    "image": "assets/img/placeholder-wide.svg",
+    "imageAlt": "Notebook and pen"
+  },
+  {
+    "title": "The craft of clear thinking",
+    "excerpt": "Lessons from builders who kept their tools sharp and opinions flexible.",
+    "author": "Maya · Editor",
+    "category": "Pioneers",
+    "tags": ["pioneers"],
+    "image": "assets/img/placeholder-wide.svg",
+    "imageAlt": "Portrait sketch"
+  },
+  {
+    "title": "Start with a block, not a blueprint",
+    "excerpt": "Why shipping the first unit is the best way to design the tenth.",
+    "author": "Ravi · PM",
+    "category": "First Block",
+    "tags": ["first-block", "tech"],
+    "image": "assets/img/placeholder-wide.svg",
+    "imageAlt": "Blocks and diagrams"
+  }
+]
+

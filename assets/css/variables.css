@@ -1,0 +1,10 @@
+:root {
+  --bg: #ffffff;
+  --text: #0a0a0a;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --brand: #111827;
+  --wrap: min(1200px, 94vw);
+  --radius: 14px;
+}
+
