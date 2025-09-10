@@ -4,12 +4,25 @@ async function loadBlogs() {
   try {
     const res = await fetch('assets/data/blogs.json', { cache: 'no-cache' });
     const items = res.ok ? await res.json() : [];
-    const html = items.map(toCard).join('');
+    const sorted = sortByDateDesc(items);
+    const html = sorted.map(toCard).join('');
     container.innerHTML = html;
     setupFiltering();
   } catch (e) {
     container.innerHTML = '<p class="muted">Failed to load posts.</p>';
   }
+}
+
+function sortByDateDesc(list) {
+  return (Array.isArray(list) ? [...list] : []).sort((a,b) => {
+    const da = Date.parse(a && a.date);
+    const db = Date.parse(b && b.date);
+    const va = isNaN(da) ? -Infinity : da;
+    const vb = isNaN(db) ? -Infinity : db;
+    // newer first; items without date sink to bottom but preserve relative order
+    if (vb === va) return 0;
+    return vb - va;
+  });
 }
 
 function toCard(item) {
@@ -47,4 +60,3 @@ function setupFiltering() {
 }
 
 document.addEventListener('DOMContentLoaded', loadBlogs);
-
