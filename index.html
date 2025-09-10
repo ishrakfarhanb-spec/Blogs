@@ -6,53 +6,51 @@
     <title>Blogs | Ishrak Farhan</title>
     <meta name="description" content="Personal blog posts and essays." />
     <meta name="theme-color" content="#0a0a0a" />
-    <link rel="icon" href="../assets/img/Brand Logo.png" type="image/png" />
-    <link rel="apple-touch-icon" href="../assets/img/Brand Logo.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Blogs | Ishrak Farhan" />
     <meta property="og:description" content="Personal blog posts and essays." />
-    <meta property="og:image" content="../assets/img/og-default.png" />
+    <meta property="og:image" content="assets/img/placeholder-wide.svg" />
     <meta property="og:url" content="https://ishrakfarhanb-spec.github.io/Blogs/" />
     <link rel="canonical" href="https://ishrakfarhanb-spec.github.io/Blogs/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="../assets/css/variables.css" />
-    <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/layout.css" />
-    <link rel="stylesheet" href="../assets/css/components.css" />
-    <!-- Minimal page typography handled via local CSS (no external fonts) -->
-    <link rel="stylesheet" href="../assets/css/pages/blogs.css" />
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages/blogs.css" />
   </head>
-  <body class="blogs-page">
+  <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div data-include="header"></div>
-    <main id="main" class="section">
-      <div class="wrap flow">
-        <h1 class="blogs-title">BLOGS</h1>
-        <div class="blog-toolbar">
-          <label class="sort">
-            <span>Sort by:</span>
-            <select id="blog-sort">
-              <option value="newest" selected>Newest</option>
-              <option value="oldest">Oldest</option>
-            </select>
-          </label>
-        </div>
-        <div id="blogs-grid" class="grid cards-3"></div>
-      </div>
-    </main>
-    <div data-include="follow-cta"></div>
-    <div data-include="footer"></div>
-    <script src="../assets/js/includes.js" defer></script>
-    <script src="../assets/js/main.js" defer></script>
-    <div id="blog-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-      <div class="modal-dialog" role="document">
-        <button class="modal-close" aria-label="Close">×</button>
-        <div class="modal-body" id="blog-modal-content"></div>
-      </div>
-    </div>
 
-    <script src="../assets/js/lazyload.js" defer></script>
-    <script src="../assets/js/blogs.js" defer></script>
+    <main id="main" class="shell">
+      <aside class="sidebar">
+        <div class="sticky">
+          <h1>Blogs <span class="amp">&amp;</span> Notes</h1>
+          <p class="sub">Thoughts on craft, tools, and shipping small things often.</p>
+          <hr />
+          <h3>Filter</h3>
+          <div class="filters" role="tablist" aria-label="Filter posts">
+            <button class="active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button data-filter="hq" role="tab" aria-selected="false">Notion HQ</button>
+            <button data-filter="teams" role="tab" aria-selected="false">For Teams</button>
+            <button data-filter="tech" role="tab" aria-selected="false">Tech</button>
+            <button data-filter="inspiration" role="tab" aria-selected="false">Inspiration</button>
+            <button data-filter="pioneers" role="tab" aria-selected="false">Pioneers</button>
+            <button data-filter="first-block" role="tab" aria-selected="false">First Block</button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="feed" id="feed" aria-live="polite"></section>
+    </main>
+
+    <div data-include="footer"></div>
+
+    <script src="assets/js/includes.js" defer></script>
+    <script src="assets/js/blogs.js" defer></script>
   </body>
-</html>
+  </html>
+
