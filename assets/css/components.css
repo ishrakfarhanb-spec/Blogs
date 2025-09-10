@@ -35,3 +35,6 @@ ul.plain { list-style: none; margin: 0; padding: 0; }
   .site-nav #nav-list { display: none; }
   .nav-toggle { display: inline-flex; }
 }
+
+/* promo image link spacing */
+.promo-link { margin-top: 16px; }
