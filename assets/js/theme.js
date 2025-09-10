@@ -6,7 +6,10 @@
     var btn = document.getElementById('theme-toggle');
     if(btn){
       btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
-      btn.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+      // Keep a single, consistent label
+      btn.textContent = 'Toggle Theme';
+      btn.setAttribute('aria-label', 'Toggle Theme');
+      btn.setAttribute('title', 'Toggle Theme');
     }
   }
 
@@ -24,7 +27,12 @@
     try { saved = localStorage.getItem('theme') || 'light'; } catch(e){}
     apply(saved);
     var btn = document.getElementById('theme-toggle');
-    if(btn){ btn.addEventListener('click', toggle); }
+    if(btn){
+      // Ensure consistent button label
+      btn.textContent = 'Toggle Theme';
+      btn.setAttribute('aria-label', 'Toggle Theme');
+      btn.setAttribute('title', 'Toggle Theme');
+      btn.addEventListener('click', toggle);
+    }
   });
 })();
-
