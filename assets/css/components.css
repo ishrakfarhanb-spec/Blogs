@@ -64,7 +64,6 @@
 /* Vertically center the brand block specifically */
 .footer-grid > div:first-child { display: flex; flex-direction: column; justify-content: center; }
 .footer-bottom { display: none; }
-.
 .footer-note { margin: 0; color: #9ca3af; font-size: 12px; line-height: 1.2; }
 .footer-brand + .footer-note { margin-top: 4px; }
 .footer-note + .footer-note { margin-top: 2px; }
