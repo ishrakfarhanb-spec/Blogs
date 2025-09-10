@@ -42,8 +42,7 @@ ul.plain { list-style: none; margin: 0; padding: 0; }
   .nav-toggle { display: inline-flex; }
 }
 
-/* promo image link spacing */
-.promo-link { margin-top: 16px; }
+/* promo image link removed */
 
 /* floating theme toggle at bottom */
 .theme-toggle-floating {
