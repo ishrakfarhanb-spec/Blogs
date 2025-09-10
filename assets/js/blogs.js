@@ -40,13 +40,13 @@ function toCard(item) {
       <h2 class="title">${escapeHtml(item.title)}</h2>
       <p class="desc">${escapeHtml(item.excerpt || '')}</p>
       <div class="byline"><span class="avatar" aria-hidden="true"></span><span>${escapeHtml(item.author || '')}</span></div>
-      ${item.slug ? `<a class="btn btn-link" href="post.html?slug=${encodeURIComponent(item.slug)}">Read more →</a>` : ''}
+      ${item.slug ? `<a class="btn btn-link" href="post.html?slug=${encodeURIComponent(item.slug)}">Read more &rarr;</a>` : ''}
     </div>
   </article>`;
 }
 
 function escapeHtml(str) {
-  return String(str).replace(/[&<>"]+/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s]));
+  return String(str).replace(/[&<>\"]+/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[s]));
 }
 
 function setupFiltering() {
@@ -65,3 +65,4 @@ function setupFiltering() {
 }
 
 document.addEventListener('DOMContentLoaded', loadBlogs);
+
