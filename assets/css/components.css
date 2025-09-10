@@ -32,7 +32,9 @@
 .nav-toggle { display: none; }
 .site-footer { border-top: 1px solid var(--border); margin-top: 40px; background: #fff; }
 .footer-grid, .footer-bottom { max-width: var(--wrap); margin: 0 auto; padding: 20px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.footer-bottom { display: block; border-top: 1px solid var(--border); color: var(--muted); }
+.footer-bottom { display: none; }
+.
+.footer-note { margin-top: 10px; color: var(--muted); font-size: 14px; }
 ul.plain { list-style: none; margin: 0; padding: 0; }
 .footer-brand { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
 /* Footer links: dark text, vertical follow list */
