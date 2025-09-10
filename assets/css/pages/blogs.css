@@ -6,12 +6,17 @@
 .sidebar hr { border: none; border-top: 1px solid var(--border); margin: 18px 0; }
 .sidebar h3 { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
 .filters { display: grid; gap: 8px; }
-.filters button { text-align: left; border: 1px solid var(--border); background: transparent; padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 14px; color: var(--text); }
+.filters button { text-align: left; border: 1px solid var(--border); background: transparent; padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 14px; color: var(--text); transition: background-color .15s ease, border-color .15s ease, color .15s ease; }
 .filters button:hover { background: #f3f4f6; }
 .filters .active { background: var(--brand); color: #fff; border-color: var(--brand); }
+/* Keep selected style on hover */
+.filters .active:hover { background: var(--brand); color: #fff; border-color: var(--brand); }
+/* Keyboard focus */
+.filters button:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 
 /* Ensure contrast in dark theme */
 :root[data-theme="dark"] .filters button:hover { background: #111827; }
+:root[data-theme="dark"] .filters .active:hover { background: var(--brand); }
 
 .feed { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 
