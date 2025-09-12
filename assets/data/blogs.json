@@ -8,7 +8,7 @@
       "_No response_"
     ],
     "image": "assets/img/placeholder-wide.svg",
-    "imageAlt": "Modern Masculinity Defined",
+    "imageAlt": "Redefining Masculinity in the 21st Century: Breaking Stereotypes and Embracing Diversity",
     "excerpt": "",
     "slug": "redefining-masculinity-in-the-21st-century-breaking-stereotypes-and-embracing-diversity"
   },
@@ -17,7 +17,9 @@
     "date": "2025-9-12",
     "author": "Ishrak Farhan Bhuiyan",
     "category": "Technology",
-    "tags": ["technology"],
+    "tags": [
+      "technology"
+    ],
     "image": "https://res.cloudinary.com/dhcccab2y/image/upload/c_fill,w_3176,h_1417,q_90,f_auto/v1600199684/becoming-a-digital-nomad-cover_g3qama",
     "imageAlt": "Digital Nomad cover image",
     "excerpt": "",
