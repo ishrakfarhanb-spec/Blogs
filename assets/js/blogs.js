@@ -32,12 +32,13 @@ function sortByDateDesc(list) {
 function toCard(item) {
   const tags = (item.tags || []).join(' ');
   const img = item.image || 'assets/img/placeholder-wide.svg';
+  const href = item.slug ? `post.html?slug=${encodeURIComponent(item.slug)}` : '';
   return `
   <article class="card" data-tags="${tags}">
     <div class="media"><img src="${img}" alt="${escapeHtml(item.imageAlt || item.title)}" loading="lazy" /></div>
     <div class="card-body">
       <span class="eyebrow">${escapeHtml(item.category || '')}</span>
-      <h2 class="title">${escapeHtml(item.title)}</h2>
+      <h2 class="title">${href ? `<a href="${href}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</h2>
       <p class="desc">${escapeHtml(item.excerpt || '')}</p>
       <div class="byline"><span class="avatar" aria-hidden="true"></span><span>${escapeHtml(item.author || '')}</span></div>
       ${item.slug ? `<a class="btn btn-link" href="post.html?slug=${encodeURIComponent(item.slug)}">Read more &rarr;</a>` : ''}
@@ -65,4 +66,3 @@ function setupFiltering() {
 }
 
 document.addEventListener('DOMContentLoaded', loadBlogs);
-
