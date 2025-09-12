@@ -2,8 +2,16 @@
 (function(){
   function qs(k){ return new URLSearchParams(location.search).get(k); }
   function esc(s){ return String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+  function transformInline(s){
+    // Replace custom image marker like: (((https://...))) with an inline image
+    return String(s||'').replace(/\(\(\(([^)]+)\)\)\)/g, (m, url) => {
+      const safe = url.replace(/"/g, '%22');
+      return `<img class="post-img" src="${safe}" alt="" loading="lazy">`;
+    });
+  }
   function para(html){
-    const lines = String(html||'').split(/\r?\n\r?\n+/);
+    const withImages = transformInline(String(html||''));
+    const lines = withImages.split(/\r?\n\r?\n+/);
     return lines.map(x => `<p>${x.replace(/\r?\n/g,'<br>')}</p>`).join('\n');
   }
   async function init(){
@@ -26,4 +34,3 @@
   }
   document.addEventListener('DOMContentLoaded', init);
 })();
-
