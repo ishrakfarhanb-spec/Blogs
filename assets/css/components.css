@@ -1,4 +1,4 @@
-.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border); background: #fff; color: var(--text); text-decoration: none; font-weight: 600; }
+﻿.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border); background: #fff; color: var(--text); text-decoration: none; font-weight: 600; }
 .btn-primary { background: var(--brand); color: #fff; border-color: var(--brand); }
 .muted { color: var(--muted); }
 
@@ -120,3 +120,4 @@ ul.plain { list-style: none; margin: 0; padding: 0; }
 :root[data-theme="dark"] .site-nav[data-open="true"] #nav-list { background: #0f172a; border-color: var(--border); }
 :root[data-theme="dark"] .site-nav.open #nav-list li a:hover,
 :root[data-theme="dark"] .site-nav[data-open="true"] #nav-list li a:hover { background: #111827; }
+
